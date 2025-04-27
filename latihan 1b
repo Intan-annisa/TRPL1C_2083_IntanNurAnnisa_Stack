@@ -1,0 +1,15 @@
+import 'dart:io';
+
+void main() {
+  stdout.write("Masukkan kalimat: ");
+  String input = stdin.readLineSync()!;
+  String reversed = input.split('').reversed.join('');
+
+  print("Hasil = $reversed");
+
+  if (input == reversed) {
+    print("Palindrom");
+  } else {
+    print("Bukan palindrom");
+  }
+}
